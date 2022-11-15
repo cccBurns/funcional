@@ -1,0 +1,185 @@
+/* VARIABLES */
+/* OPERACIONES */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #e9ecf4;
+  color: #000;
+  font-family: sans-serif; }
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px; }
+
+/* CONDICIONALES */
+.menu {
+  width: 100%;
+  background: #132a13;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 25px; }
+  .menu ul {
+    list-style: none;
+    border-radius: 10px; }
+    .menu ul li {
+      display: inline-block;
+      padding: 25px 30px;
+      transition: all .3s ease;
+      border-radius: 10px; }
+      .menu ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Bebas Neue', cursive; }
+
+.menu ul li:hover {
+  transform: scale(1.2);
+  background: #4f772d; }
+
+/* @EACH y @FOR  = Lo entiendo, vi la explicacion de la profe varias veces pero no se donde aplicarlo en la pagina */
+/* ANIMACION */
+.contenedor .header .fotoMenu img {
+  animation: palpitar 5s linear infinite alternate;
+  will-change: transform; }
+
+@keyframes palpitar {
+  0% {
+    transform: rotate(0deg) scale(1); }
+  50% {
+    transform: rotate(0deg) scale(0.95); }
+  100% {
+    transform: rotate(0deg) scale(1); } }
+
+.contenedor {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "header header header" "contenido contenido contenido" "widget-1 sidebar widget-2" "footer footer footer"; }
+  .contenedor .header {
+    background: #132a13;
+    color: #fff;
+    grid-area: header; }
+    .contenedor .header .fotoMenu img {
+      max-width: 100%;
+      border-radius: 10px; }
+
+.contenedor .contenido {
+  grid-area: contenido;
+  padding: 40px; }
+  .contenedor .contenido h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px; }
+  .contenedor .contenido h2 {
+    color: #fff;
+    font-size: 25px;
+    padding: 30px;
+    text-align: center;
+    background: #132a13;
+    border-radius: 10px; }
+  .contenedor .contenido h3 {
+    color: #fff;
+    font-size: 25px;
+    padding: 30px;
+    text-align: center;
+    background: #31572c;
+    border-radius: 10px; }
+  .contenedor .contenido h4 {
+    font-size: 25px;
+    padding: 30px;
+    text-align: center;
+    background: #4f772d;
+    border-radius: 10px; }
+  .contenedor .contenido h5 {
+    font-size: 25px;
+    padding: 30px;
+    text-align: center;
+    background: #90a955;
+    border-radius: 10px; }
+  .contenedor .contenido h6 {
+    font-size: 25px;
+    padding: 30px;
+    text-align: center;
+    background: #ecf39e;
+    border-radius: 10px; }
+  .contenedor .contenido p {
+    text-align: justify;
+    padding: 20px;
+    line-height: 20px; }
+
+.contenedor .sidebar {
+  font-size: 30px;
+  grid-column: 3 / 4;
+  background: #936639;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  grid-area: sidebar; }
+
+.widget-1,
+.widget-2 {
+  background: #a68a64;
+  font-size: 30px;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.widget-2 {
+  background: #7f4f24; }
+
+.widget-1 {
+  grid-area: widget-1; }
+
+.widget-2 {
+  grid-area: widget-2; }
+
+.contenedor .footer {
+  background: #582f0e;
+  color: #fff;
+  grid-area: footer; }
+  .contenedor .footer .footercontenedor .titulofooter {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 20px; }
+  .contenedor .footer .copy {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 20px; }
+  .contenedor .footer .redes {
+    display: flex;
+    justify-content: center; }
+    .contenedor .footer .redes i {
+      font-size: 30px;
+      padding: 0 20px; }
+
+.contenido .profes {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  height: 25vh; }
+
+@media screen and (max-width: 768px) {
+  .contenedor {
+    grid-template-areas: "header header header" "contenido contenido contenido"                          "widget-1 widget-1 widget-1" "sidebar sidebar sidebar" "widget-2 widget-2 widget-2" "footer footer footer"; } }
