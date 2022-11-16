@@ -40,7 +40,8 @@ body {
 
 .menu ul li:hover {
   transform: scale(1.2);
-  background: #4f772d; }
+  background: #4f772d;
+  font-family: 'Bebas Neue', cursive; }
 
 /* @EACH y @FOR  = Lo entiendo, vi la explicacion de la profe varias veces pero no se donde aplicarlo en la pagina */
 /* ANIMACION */
