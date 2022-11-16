@@ -36,12 +36,11 @@ body {
       .menu ul li a {
         color: #fff;
         text-decoration: none;
-        font-family: 'Bebas Neue', cursive; }
+        font-family: 'Times New Roman', Times, serif; }
 
 .menu ul li:hover {
   transform: scale(1.2);
-  background: #4f772d;
-  font-family: 'Bebas Neue', cursive; }
+  background: #4f772d; }
 
 /* @EACH y @FOR  = Lo entiendo, vi la explicacion de la profe varias veces pero no se donde aplicarlo en la pagina */
 /* ANIMACION */
@@ -81,9 +80,10 @@ body {
     font-size: 50px;
     font-weight: bold;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     background: #fff;
-    border-radius: 10px; }
+    border-radius: 10px;
+    font-family: 'Bebas Neue', cursive; }
   .contenedor .contenido h2 {
     color: #fff;
     font-size: 25px;
@@ -119,7 +119,8 @@ body {
   .contenedor .contenido p {
     text-align: justify;
     padding: 20px;
-    line-height: 20px; }
+    line-height: 20px;
+    font-size: 20px; }
 
 .contenedor .sidebar {
   font-size: 30px;
@@ -179,8 +180,15 @@ body {
   align-items: center;
   text-align: center;
   padding: 20px;
-  height: 25vh; }
+  height: 25vh;
+  border-radius: 5px; }
 
 @media screen and (max-width: 768px) {
   .contenedor {
-    grid-template-areas: "header header header" "contenido contenido contenido"                          "widget-1 widget-1 widget-1" "sidebar sidebar sidebar" "widget-2 widget-2 widget-2" "footer footer footer"; } }
+    grid-template-areas: "header header header" "contenido contenido contenido"                          "widget-1 widget-1 widget-1" "sidebar sidebar sidebar" "widget-2 widget-2 widget-2" "footer footer footer"; }
+  .sidebar {
+    background-color: #a68a64; }
+  .widget-1 {
+    background-color: #936639; }
+  .widget-2 {
+    background-color: #7f4f24; } }

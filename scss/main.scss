@@ -45,8 +45,7 @@ $tamañoFuente: 50px;
     "contenido contenido contenido"
     "widget-1 sidebar widget-2"
     "footer footer footer";
-
-.header {
+    .header {
         background: #132a13;
         color: #fff;
         grid-area: header;
@@ -64,9 +63,10 @@ $tamañoFuente: 50px;
         font-size: $tamañoFuente;
         font-weight: bold;
         text-align: center;
-        padding: 20px;
+        padding: 30px;
         background: #fff;
         border-radius: 10px;
+        font-family: 'Bebas Neue', cursive;
         
     }
     h2 {
@@ -110,6 +110,7 @@ $tamañoFuente: 50px;
         text-align: justify;
         padding: 20px;
         line-height: 20px;
+        font-size: 20px;
     }
 }
 
@@ -179,6 +180,7 @@ $tamañoFuente: 50px;
         text-align: center;    
         padding: 20px;
         height: 25vh;
+        border-radius: 5px;
 }
         
     @media screen and (max-width: 768px) {
@@ -189,6 +191,15 @@ $tamañoFuente: 50px;
             "sidebar sidebar sidebar"
             "widget-2 widget-2 widget-2"
             "footer footer footer";
+        }
+        .sidebar{
+            background-color: #a68a64;
+        }
+        .widget-1{
+            background-color: #936639;
+        }
+        .widget-2{
+            background-color: #7f4f24;
         }
         
 }
