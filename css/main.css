@@ -190,6 +190,11 @@ body .widget-1 {
 body .widget-2 {
   background-color: #7f4f24; }
 
+body .enviar {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 @media screen and (max-width: 768px) {
   .contenedor {
     grid-template-areas: "header header header" "contenido contenido contenido"                          "sidebar sidebar sidebar" "widget-1 widget-1 widget-1" "widget-2 widget-2 widget-2" "footer footer footer"; }
@@ -199,3 +204,7 @@ body .widget-2 {
       background-color: #936639; }
     .contenedor .widget-2 {
       background-color: #7f4f24; } }
+
+/* @media screen and (max-width: 425px) {
+
+    } */

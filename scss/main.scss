@@ -191,6 +191,12 @@ body .widget-1{
 body .widget-2{
     background-color: #7f4f24;
 }
+
+body .enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
         
     @media screen and (max-width: 768px) {
         .contenedor {
@@ -213,3 +219,7 @@ body .widget-2{
         }
         
 }
+
+    /* @media screen and (max-width: 425px) {
+
+    } */
