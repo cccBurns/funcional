@@ -42,7 +42,6 @@ body {
   transform: scale(1.2);
   background: #4f772d; }
 
-/* @EACH y @FOR  = Lo entiendo, vi la explicacion de la profe varias veces pero no se donde aplicarlo en la pagina */
 /* ANIMACION */
 .contenedor .header .fotoMenu img {
   animation: palpitar 5s linear infinite alternate;
@@ -63,8 +62,8 @@ body {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, auto);
-  grid-template-areas: "header header header" "contenido contenido contenido" "widget-1 sidebar widget-2" "footer footer footer"; }
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "header header header" "contenido contenido contenido" "sidebar sidebar sidebar" "widget-1 widget-1 widget-1" "widget-2 widget-2 widget-2" "footer footer footer"; }
   .contenedor .header {
     background: #132a13;
     color: #fff;
@@ -125,7 +124,7 @@ body {
 .contenedor .sidebar {
   font-size: 30px;
   grid-column: 3 / 4;
-  background: #936639;
+  background: #a68a64;
   text-align: center;
   display: flex;
   align-items: center;
@@ -180,15 +179,23 @@ body {
   align-items: center;
   text-align: center;
   padding: 20px;
-  height: 25vh;
-  border-radius: 5px; }
+  height: 25vh; }
+
+body .sidebar {
+  background-color: #a68a64; }
+
+body .widget-1 {
+  background-color: #936639; }
+
+body .widget-2 {
+  background-color: #7f4f24; }
 
 @media screen and (max-width: 768px) {
   .contenedor {
-    grid-template-areas: "header header header" "contenido contenido contenido"                          "widget-1 widget-1 widget-1" "sidebar sidebar sidebar" "widget-2 widget-2 widget-2" "footer footer footer"; }
-  .sidebar {
-    background-color: #a68a64; }
-  .widget-1 {
-    background-color: #936639; }
-  .widget-2 {
-    background-color: #7f4f24; } }
+    grid-template-areas: "header header header" "contenido contenido contenido"                          "sidebar sidebar sidebar" "widget-1 widget-1 widget-1" "widget-2 widget-2 widget-2" "footer footer footer"; }
+    .contenedor .sidebar {
+      background-color: #a68a64; }
+    .contenedor .widget-1 {
+      background-color: #936639; }
+    .contenedor .widget-2 {
+      background-color: #7f4f24; } }
