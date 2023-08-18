@@ -58,6 +58,11 @@ img {
     text-transform: uppercase;
 }
 
+.green {
+    font-size: 60px;
+    
+}
+
 .menu .navbar ul li {
     position: relative;
     float: left;
