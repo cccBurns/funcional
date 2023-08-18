@@ -56,6 +56,7 @@ img {
     font-size: 25px;
     font-weight: 800;
     text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
 }
 
 .green {
@@ -99,11 +100,12 @@ img {
 }
 
 .header-txt h1 {
-    font-size: 85px;
+    font-size: 75px;
     line-height: 1;
     color: #FFFFFF;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 p {
@@ -411,37 +413,73 @@ input {
 }
 
 .footer {
-    padding: 100px 0;
-    background-color: #191A1F;
+    padding: 80px 0;
+    background-color: #898989;    
 }
 
-.footer-content {
+.footer-row {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
 }
 
-.link h3 {
-    font-size: 17px;
-    color: #FFFFFF;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+.footer-links {
+    width: 25%;
+    padding: 0 15px;
 }
 
-.link a {
-    font-size: 17px;
-    color: #D4D4D4;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.link a:hover {
+.footer-links h4 {
+    font-size: 20px;
     color: #4ff549;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #191A1F;
+    padding-bottom: 10px;
+    display: inline-block;
 }
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #4ff549;
+    padding-left: 6px;
+}
+
+.social-link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    transition: all .5s ease;
+}
+
+.social-link a:hover {
+    background-color: #4ff549;
+}
+
+/* .footer-logo {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+} */
 
 .map {
     filter: grayscale(100%) invert(92%) contrast(93%);
-}
-
+} 
 
 @media (max-width: 991px) {
 
@@ -564,13 +602,13 @@ input {
         padding: 100px 30px;
     }
 
-    .footer {
-        padding: 30px;
+    .footer-row {
+        text-align: center;
     }
 
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
+    .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
     }
 
 
