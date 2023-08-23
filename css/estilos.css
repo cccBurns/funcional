@@ -438,6 +438,7 @@ input {
 }
 
 .footer .social a:hover {
+    color: #3ecf39;
     opacity: 0.5;
 }
 
@@ -463,6 +464,7 @@ input {
 }
 
 .footer ul li a:hover {
+    color: #3ecf39;
     opacity: 0.5;
 }
 
