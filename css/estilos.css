@@ -383,6 +383,7 @@ input {
 }
 
 .blog-1 img {
+    width: 100%;    
     margin-bottom: 15px;
 }
 
@@ -426,7 +427,7 @@ input {
 .footer .social a {
     font-size: 24px;
     color: inherit;
-    border: 1px solid #ccc;
+    border: 1px solid #202020;
     width: 40px;
     height: 40px;
     line-height: 38px;
