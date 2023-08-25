@@ -413,6 +413,35 @@ input {
     text-align: center;
 }
 
+.galeria {
+    background-color: #202020;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.wrapper h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.img-galle {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.g-img {
+    padding: 0 20px 20px;
+}
+
+img:hover {
+    opacity: .8;
+    transition: .9s;
+}
+
 .footer {
     padding: 40px 0;
     background-color: #FFFFFF;
