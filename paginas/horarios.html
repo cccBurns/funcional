@@ -5,17 +5,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funcional</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="../css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../multimedia/logochiquito.ico" type="image/x-icon">
 </head>
 
 <body>
 
-    <body>
+  <header class="header">
 
-        <div class="contenedor">
+    <div class="menu container">
+        <a href="#" class="logo">Green</a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+            <img src="./multimedia/menu.png" class="menu-icono" alt="menu">
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="horarios.html">Horarios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>   
+            </ul>
+        </nav>
+    </div>
+
+    <div class="header-content container">
+        <div class="header-txt">
+            <h1><span class="green">Green</span><br>Horarios</h1>
+            <!-- <p>
+                "Trabaja duro en silencio y deja que tus exitos hagan todo el ruido."
+            </p> -->
+            <!-- <a href="#" class="btn-1">Informacion</a> -->
+        </div>
+    </div>
+</header>
+
+<section class="tabla">
+  <div class="tabla-container">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Clase</th>
+          <th scope="col">Dias</th>
+          <th scope="col">Horario</th>
+          <th scope="col">Precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Funcional</th>
+          <td>Lunes y Miercoles</td>
+          <td>11hs a 12hs</td>
+          <td>$300</td>
+        </tr>
+        <tr>
+          <th scope="row">Localizada</th>
+          <td>Lunes y Miercoles</td>
+          <td>13hs a 14hs</td>
+          <td>$300</td>
+        </tr>
+        <tr>
+          <th scope="row">Funcional</th>
+          <td>Martes y Jueves</td>
+          <td>19hs a 20hs</td>
+          <td>$350</td>                            
+        </tr>
+        <tr>
+          <th scope="row">Aerobox</th>
+          <td>Martes y Sabado</td>
+          <td>11hs a 12hs</td>
+          <td>$400</td>                            
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <div class="social">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-snapchat"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+  </div>
+
+      <ul>
+          <li>
+              <a href="#">Inicio</a>
+          </li>
+          <li>
+              <a href="#">Nosotros</a>
+          </li>
+          <li>
+              <a href="#">Galeria</a>
+          </li>
+          <li>
+              <a href="#">Horario</a>
+          </li>
+          <li>
+              <a href="#">Contacto</a>
+          </li>
+      </ul>
+      <p class="copyright">
+          GREEN Argentina 2023 ® todos los derechos reservados
+      </p>
+</footer>
+
+<script src="https://kit.fontawesome.com/96269ff2ef.js" crossorigin="anonymous"></script>
+
+        <!-- <div class="contenedor">
     
             <header class="header">
     
@@ -47,9 +149,9 @@
     
                 </nav>
     
-            </header>
+            </header> -->
     
-            <main class="contenido">
+            <!-- <main class="contenido">
 
                 <h1>ENTRENAMIENTO FUNCIONAL</h1>
                 
@@ -131,7 +233,7 @@
                 </footer>
                 <script src="https://kit.fontawesome.com/96269ff2ef.js" crossorigin="anonymous"></script>
                 
-            </div>   
+            </div>    -->
     </body>             
 
 </body>
